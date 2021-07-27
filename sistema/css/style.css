@@ -1,0 +1,491 @@
+*{
+
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+body{
+
+	background: #313D52; 
+
+}
+
+.cabecera{
+
+	background: #C9F1FF;
+	padding: 11px;
+	font-family: 'Open sans';
+	font-size: 26px;
+
+}
+
+.cabecera span{
+
+	margin-left: 480px;
+	font-size: 17px;
+
+}
+
+.navegacion{
+
+	width: 1000px;
+	margin: 30px auto;
+	background: white;
+
+}
+
+.navegacion ul{
+
+	list-style: none;
+
+}
+
+.menu > li{
+
+	/* position: relative; */
+	display: inline-block;
+
+}
+
+.menu > li > a{
+
+	display: block;
+	padding: 18px 50px;
+	color: #353535;
+	font-family: 'open sans';
+	text-decoration: none;
+
+}
+
+.menu li a:hover{
+
+	color: #CE7D35;
+	transition: all .3s;
+
+}
+
+.submenu {
+
+	position: absolute;
+	background: #333333;
+	width: 15%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s;
+
+}
+
+.submenu li a {
+
+	display: block;
+	padding: 15px;
+	color: white;
+	font-family: 'Open sans';
+	text-decoration: none;
+
+}
+
+.menu li:hover .submenu{
+
+	visibility: visible;
+	opacity: 1;
+
+}
+
+/* Mensaje de alerta */
+
+.alerta{
+
+	text-align: center;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	background: #85CBFF;
+	margin: 5px 30px;
+	height: 23px;
+
+}
+
+/* About */
+
+.about{
+
+	margin: 50px auto;
+	background: #E1F7FE;
+	width: 400px;
+
+}
+
+/* Contenido */
+
+.contenido{
+
+	width: 1000px;
+	margin: 50px auto;
+	background: white;
+	height: 630px;
+	overflow: auto;
+
+}
+
+.btn_cancelar, .btn_aceptar{
+
+	width: 125px;
+	background: #FFE6D9;
+	color: black;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+
+}
+
+.btn_cancelar{
+
+	background: #CAFFFE;
+
+}
+
+/* Paginador */
+
+.paginador ul{
+
+	margin: 17px 8px;
+	list-style: none;
+	background: white;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+}
+
+.paginador a, .paginaSelected{
+
+	color: #5B6353;
+	border: 1px solid #ddd;
+	padding: 7px;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 35px;
+	transition: all .3s;
+
+}
+
+.paginador a:hover{
+
+	background: #CE7D35;
+
+}
+
+.paginaSelected{
+
+	color: #5B6353;
+	background: #428BCA;
+	border: 1px solid #128bca;
+
+}
+
+/* Nuevo producto */
+
+.formularioNuevoProducto{
+
+	margin: 50px auto;
+	background: #E1F7FE;
+	width: 400px;
+	
+}
+
+.nuevoProducto {
+
+	margin: 15px auto;
+	width: 350px;
+
+}
+
+.nuevoProducto label {
+
+	text-align: justify;
+	letter-spacing: 1px;
+
+}
+
+.nuevoProducto input {
+
+	border-radius: 5px;
+	height: 30px;
+	width: 350px;
+	letter-spacing: 1px;
+
+}
+
+.nuevoProducto select {
+
+	border-radius: 5px;
+	height: 30px;
+	width: 350px;
+	letter-spacing: 1px;
+
+}
+
+.btnregistrar {
+
+	border-radius: 15px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	width: 350px;
+	background: #85ACFF;
+	border-color: #85ACFF;
+
+}
+
+/* Nueva categoria*/
+
+.formularioNuevaCategoria{
+
+	margin: 50px auto;
+	background: #E1F7FE;
+	width: 390px;
+	
+}
+
+.nuevaCategoria {
+
+	margin: 15px auto;
+	width: 350px;
+
+}
+
+.nuevaCategoria label {
+
+	text-align: justify;
+	letter-spacing: 1px;
+
+}
+
+.nuevaCategoria input {
+
+	border-radius: 5px;
+	height: 30px;
+	width: 350px;
+	letter-spacing: 1px;
+
+}
+
+/* Listado de productos */
+
+.formularioListProductos {
+
+	margin: 15px auto;
+	width: 980px;
+
+}
+
+.formularioListProductos table{
+
+	border-collapse: collapse;
+	font-size: 12pt;
+	font-family: 'arial';
+	width: 100%;
+
+}
+
+.formularioListProductos td{
+
+	padding: 12px;
+	letter-spacing: 1px;
+
+}
+
+.formularioListProductos th{
+
+	text-align: left;
+	padding: 14px;
+	background: #E1FAEF;
+	color: #5B6353;
+	letter-spacing: 1px;
+
+}
+
+.formularioListProductos table tr:nth-child(odd){
+
+background: #F5F5F5;
+
+}
+
+/* Listado de categorías */
+
+.formularioListCategorias {
+
+	margin: 15px auto;
+	width: 950px;
+
+}
+
+.formularioListCategorias table{ 
+
+	border-collapse: collapse;
+	font-size: 12pt;
+	font-family: 'arial';
+	width: 100%;
+
+}
+
+.formularioListCategorias td{
+
+	padding: 15px;
+	letter-spacing: 1px;
+
+}
+
+.formularioListCategorias th{
+
+	text-align: left;
+	padding: 13px;
+	background: #E1FAEF;
+	color: #5B6353;
+	letter-spacing: 1px;
+
+}
+
+.formularioListCategorias table tr:nth-child(odd){
+
+background: #F5F5F5;
+
+}
+
+/* Eliminar productos */
+
+.formularioEliminar{
+
+	text-align: center;
+
+}
+
+.formularioEliminar h2{
+
+	font-size: 12pt;
+
+}
+
+.formularioEliminar span{
+
+	font-weight: bold;
+	color: #FF3838;
+	font-size: 12pt;
+
+}
+
+/* Reporte de productos */
+
+.formularioReportProductos {
+
+	margin: 15px auto;
+	width: 980px;
+
+}
+
+.formularioReportProductos table{
+
+	border-collapse: collapse;
+	font-size: 12pt;
+	font-family: 'arial';
+	width: 100%;
+
+}
+
+.formularioReportProductos td{
+
+	padding: 12px;
+	letter-spacing: 1px;
+
+}
+
+.formularioReportProductos th{
+
+	text-align: left;
+	padding: 14px;
+	background: #E1FAEF;
+	color: #5B6353;
+	letter-spacing: 1px;
+
+}
+
+/* Listado de usuarios */
+
+.formularioListUsuarios {
+
+	margin: 15px auto;
+	width: 995px;
+
+}
+
+.formularioListUsuarios table{
+
+	border-collapse: collapse;
+	font-size: 12pt;
+	font-family: 'arial';
+	width: 100%;
+
+}
+
+.formularioListUsuarios td{
+
+	padding: 13px;
+	letter-spacing: 1px;
+
+}
+
+.formularioListUsuarios th{
+
+	text-align: left;
+	padding: 14px;
+	background: #E1FAEF;
+	color: #5B6353;
+	letter-spacing: 1px;
+
+}
+
+.formularioListUsuarios table tr:nth-child(odd){
+
+background: #F5F5F5;
+
+}
+
+/* Reporte de productos */
+
+.btnImpresion{
+
+	display: inline-block;
+	background: #D9E9FF;
+	color: black;
+	padding: 5px 25px;
+	border-radius: 4px;
+	margin: 15px;
+}
+
+.titulo{
+
+	display: inline-block;
+
+}
+
+/* Botones editar || eliminar */
+
+.btn_editar{
+
+	color: green;
+
+}
+
+.btn_eliminar{
+
+	color: #FF3E3E;
+
+}
